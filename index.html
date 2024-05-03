@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
 </head>
@@ -13,7 +14,7 @@
     <div class="quiz_wrapper">
         <div class="quiz_header">
             <div class="quiz_timer">
-                <i>O</i>
+                <i class="fa-regular fa-clock"></i>
                 <div class="quiz_timer_text">
                     <span>Time remaining</span>
                     <p>14:00:00</p>
@@ -26,12 +27,12 @@
                 <h5>Question 1 of 10</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum blanditiis temporibus earum.
                     Doloremque eligendi veritatis ab omnis ipsum ullam.</p>
-                <ol type="A">
-                    <li>skjfsadf</li>
-                    <li>skjfsadf</li>
-                    <li>skjfsadf</li>
-                    <li>skjfsadf</li>
-                </ol>
+                <ul >
+                    <li><span>A.</span><span>amet</span></li>
+                    <li><span>B.</span><span>amet</span></li>
+                    <li><span>C.</span><span>amet</span></li>
+                    <li><span>D.</span><span>amet</span></li>
+                </ul>
             </div>
             <div class="quiz_progress">
                 <svg>
@@ -40,7 +41,28 @@
                 </svg>
                 <span id="progress_text">9/10</span>
             </div>
+            
         </div>
+        <div class="quiz_numbers">
+            <button>Prev</button>
+            <ul>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+            <button>Next</button>
+        </div>  
     </div>
 </body>
 
