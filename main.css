@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #f3f7ec, #bce2e7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --main-clr: #273d30;
+}
+
+.quiz_wrapper {
+    background-color: white;
+    min-height: 50rem;
+    width: 80rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+
+}
+
+.quiz_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.quiz_timer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.quiz_timer_text {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.quiz_timer_text>span {
+    font-size: 1rem;
+    color: #33333390;
+}
+
+.quiz_timer_text>p {
+    color: var(--main-clr);
+    letter-spacing: 3px;
+}
+
+#quiz_submit {
+    padding: 0.8rem 3rem;
+    background: var(--main-clr);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.quiz_container {
+    display: flex;
+}
+
+.quiz_question {
+    flex: 1;
+}
+
+.quiz_progress {
+    width: 200px;
+    position: relative;
+}
+
+.quiz_progress svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.quiz_progress svg circle {
+    transform: translate(50%, 50%);
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 10px;
+    stroke-linecap: round;
+}
+#progress{
+    stroke: var(--main-clr);
+    stroke-dasharray: 10 9999;
+    transition: 0.5s;
+}
+#progress_text{
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--main-clr);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz UI</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="quiz_wrapper">
+        <div class="quiz_header">
+            <div class="quiz_timer">
+                <i>O</i>
+                <div class="quiz_timer_text">
+                    <span>Time remaining</span>
+                    <p>14:00:00</p>
+                </div>
+            </div>
+            <button id="quiz_submit">SUBMIT</button>
+        </div>
+        <div class="quiz_container">
+            <div class="quiz_question">
+                <h5>Question 1 of 10</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum blanditiis temporibus earum.
+                    Doloremque eligendi veritatis ab omnis ipsum ullam.</p>
+                <ol type="A">
+                    <li>skjfsadf</li>
+                    <li>skjfsadf</li>
+                    <li>skjfsadf</li>
+                    <li>skjfsadf</li>
+                </ol>
+            </div>
+            <div class="quiz_progress">
+                <svg>
+                    <circle r="50"></circle>
+                    <circle id="progress" r="50"></circle>
+                </svg>
+                <span id="progress_text">9/10</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
